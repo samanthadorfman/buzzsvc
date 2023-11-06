@@ -1,0 +1,16 @@
+{
+  "name": "buzzsvc",
+  "version": "1.0.0",
+  "description": "buzz backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node": "^21.1.0"
+  }
+}
