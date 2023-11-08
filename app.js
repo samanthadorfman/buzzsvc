@@ -19,10 +19,14 @@ app.use(morgan('tiny'));
 const usersRouter = require('./routers/users');
 const barsRouter = require('./routers/bars');
 const ordersRouter = require('./routers/orders');
+const menuItemsRouter = require('./routers/menuItems');
+
 
 app.use(`${api}/users`, usersRouter);
 app.use(`${api}/bars`, barsRouter);
 app.use(`${api}/orders`, ordersRouter);
+app.use(`${api}/menuItems`, menuItemsRouter);
+
 
 //Database Connection
 mongoose.connect(process.env.CONNECTION_STRING,
